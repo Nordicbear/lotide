@@ -1,5 +1,5 @@
-let arr1 = new Array(3);
-let arr2 = new Array(3);
+let arr1 = new Array();
+let arr2 = new Array();
 
 let removeWord = "lighthouse";
 const newWords = [];
@@ -7,7 +7,7 @@ const words = ["hello", "world", "lighthouse"];
 
 const eqArrays = function (arr1, arr2) {
     let retval = true;
-    for (let i=0; i <= 2; i++) {
+    for (let i=0; i <= arr1.length; i++) {
         if (arr1[i] !== arr2[i]) {
             retval = false;
         }
