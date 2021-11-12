@@ -13,7 +13,6 @@ const firstNames = [
   ];
 
 const assertEqual = function(actual, expected) {
-  // console.assert(actual === expected, "🛑 " + actual + " != " + expected);
   if (actual === expected) {
       console.log("✅ Assertin Passed: " + expected + " === " + actual);
   } else
@@ -28,7 +27,6 @@ const countOnly = function(allItems, itemsToCount) {
     const results = {};
 
     for (const item of allItems) {
-      console.log(item);
       // inside the loop, 
       // increment the counter for each item:
       //   set a property with that string key to:
