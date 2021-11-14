@@ -1,14 +1,20 @@
-let arr1 = new Array(3);
-let arr2 = new Array(3);
+let arr1 = [];
+let arr2 = [];
+
 
 const eqArrays = function (arr1, arr2) {
-    let retval = true;
-    for (let i=0; i <= 2; i++) {
+    let retVal = true;
+    if (arr1.length != arr2.length) {
+      retVal = false;
+    } else {
+      retVal = true;
+      for (let i=0; i < arr1.length; i++) {
         if (arr1[i] !== arr2[i]) {
-            retval = false;
+          retVal = false;
         }
+      }
     }
-    return retval;
+    return retVal;
 }
 
 const assertArraysEqual  = function (a1, a2) {
