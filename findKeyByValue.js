@@ -25,7 +25,7 @@ const findKeyByValue = function(obj, srchVal) {
     // Scan the object and return the first key which contains the given value. 
     // If no key with that given value is found, then return undefined.
     retVal = undefined;
-    console.log("");
+
     objKeys = Object.keys(obj);
 
     for(val of objKeys){
