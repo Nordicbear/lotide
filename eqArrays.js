@@ -1,20 +1,7 @@
-// FUNCTION IMPLEMENTATION
-let actual ="", expected = "";
+const assertEqual = require('./assertEqual');
 
-//let arr1 = new Array(3);
-//let arr2 = new Array(3);
 let arr1 = [];
 let arr2 = [];
-
-const assertEqual = function(actual, expected) {
-  // console.assert(actual === expected, "🛑 " + actual + " != " + expected);
-  if (actual === expected) {
-      console.log("✅ Assertin Passed: " + expected + " === " + actual);
-  } else
-  {
-    console.log("🛑 Assertin Failed: " + expected + " !== " + actual);
-  }
-}
 
 const eqArrays = function (arr1, arr2) {
     let retVal = true;
@@ -31,8 +18,11 @@ const eqArrays = function (arr1, arr2) {
     return retVal;
 }
 
+/*
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
 assertEqual(eqArrays([1, 2, 3], [5, 2, 3]), false);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+*/
+module.exports = eqArrays;
