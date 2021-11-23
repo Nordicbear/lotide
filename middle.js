@@ -1,5 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
 let first = 0;
 let second = 0;
 
@@ -32,10 +30,5 @@ const middle = function(testArr) {
 
     return newArr;
 }
-
-console.log(middle([1, 2]));
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5]));
 
 module.exports = middle;
