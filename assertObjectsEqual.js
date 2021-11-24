@@ -64,3 +64,4 @@ assertObjectsEqual(ab, ba); // => true
 const ac = {a: "2", c: "3"};
 assertObjectsEqual(ab, ac); // => false
 
+module.exports = assertObjectsEqual;
